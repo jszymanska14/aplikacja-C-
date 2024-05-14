@@ -1,0 +1,31 @@
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/bin/Debug/net7.0/appsettings.Development.json
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/bin/Debug/net7.0/appsettings.json
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/bin/Debug/net7.0/nowa aplikacja.staticwebassets.runtime.json
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/bin/Debug/net7.0/nowa aplikacja
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/bin/Debug/net7.0/nowa aplikacja.deps.json
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/bin/Debug/net7.0/nowa aplikacja.runtimeconfig.json
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/bin/Debug/net7.0/nowa aplikacja.dll
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/bin/Debug/net7.0/nowa aplikacja.pdb
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/obj/Debug/net7.0/nowa aplikacja.csproj.AssemblyReference.cache
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/obj/Debug/net7.0/nowa aplikacja.GeneratedMSBuildEditorConfig.editorconfig
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/obj/Debug/net7.0/nowa aplikacja.AssemblyInfoInputs.cache
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/obj/Debug/net7.0/nowa aplikacja.AssemblyInfo.cs
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/obj/Debug/net7.0/nowa aplikacja.csproj.CoreCompileInputs.cache
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/obj/Debug/net7.0/nowa aplikacja.MvcApplicationPartsAssemblyInfo.cache
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/obj/Debug/net7.0/nowa aplikacja.RazorAssemblyInfo.cache
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/obj/Debug/net7.0/nowa aplikacja.RazorAssemblyInfo.cs
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/obj/Debug/net7.0/staticwebassets/msbuild.nowa aplikacja.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/obj/Debug/net7.0/staticwebassets/msbuild.build.nowa aplikacja.props
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.nowa aplikacja.props
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.nowa aplikacja.props
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/obj/Debug/net7.0/staticwebassets.pack.json
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/obj/Debug/net7.0/staticwebassets.build.json
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/obj/Debug/net7.0/staticwebassets.development.json
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/obj/Debug/net7.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/obj/Debug/net7.0/scopedcss/bundle/nowa aplikacja.styles.css
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/obj/Debug/net7.0/scopedcss/projectbundle/nowa aplikacja.bundle.scp.css
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/obj/Debug/net7.0/nowa aplikacja.dll
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/obj/Debug/net7.0/refint/nowa aplikacja.dll
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/obj/Debug/net7.0/nowa aplikacja.pdb
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/obj/Debug/net7.0/nowa aplikacja.genruntimeconfig.cache
+/Users/juliaszymanska/Projects/nowa aplikacja/nowa aplikacja/obj/Debug/net7.0/ref/nowa aplikacja.dll
