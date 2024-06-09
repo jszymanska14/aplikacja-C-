@@ -1,7 +1,18 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using Microsoft.EntityFrameworkCore;
+using nowa_aplikacja.Models;
+using nowa_aplikacja.Repositories;
+
+var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Rejestracja DbContext
+builder.Services.AddDbContext<TaskManagerContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("TaskManagerDatabase")));
+
+// Rejestracja zależności dla ITaskRepository
+builder.Services.AddScoped<ITaskRepository, TaskRepository>();
 
 var app = builder.Build();
 
@@ -25,4 +36,3 @@ app.MapControllerRoute(
     pattern: "{controller=Values}/{action=Index}/{id?}");
 
 app.Run();
-
