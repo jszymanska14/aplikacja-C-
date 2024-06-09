@@ -3,39 +3,36 @@ using System.Reflection;
 using System.Reflection.Emit;
 using Microsoft.AspNetCore.Mvc;
 using nowa_aplikacja.Models;
+using nowa_aplikacja.Repositories;
 using static System.Collections.Specialized.BitVector32;
 
 namespace nowa_aplikacja.Controllers
 {
     public class ValuesController : Controller
     {
-        private static IList<TaskModel> tasks = new List<TaskModel>()
+        private readonly ITaskRepository _taskRepository;
+        public ValuesController(ITaskRepository taskRepository)
         {
-            new TaskModel(){ TaskId = 1, Name = "Wizyta u lekarza", Description = "Godzina 17:00", Done = false},
-            new TaskModel(){ TaskId = 2, Name = "Zrobić obiad", Description = "Godzina 15:00", Done = false},
-            new TaskModel() { TaskId = 3, Name = "Trening", Description = "Godzina 8:00", Done = false}
-
-        };
+            _taskRepository = taskRepository;
+        }
 
         // GET: Task
         public ActionResult Index()
         {
-            
-                Console.WriteLine("Tasks count: " + tasks.Count);
-            
-                return View(tasks.Where(x => !x.Done));
+
+            return View(_taskRepository.GetAllActive());
         }
 
         // GET: Task/Details/5
         public ActionResult Details(int id)
         {
-            return View(tasks.FirstOrDefault(x=>x.TaskId==id));
+            return View(_taskRepository.Get(id));
         }
 
         // GET: Task/Create
         public ActionResult Create()
         {
-            return View(new TaskModel()); 
+            return View(new TaskModel());
         }
 
         // POST: Task/Create
@@ -43,16 +40,15 @@ namespace nowa_aplikacja.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(TaskModel taskModel)
         {
-            taskModel.TaskId = tasks.Count + 1;
-            tasks.Add(taskModel);
+            _taskRepository.Add(taskModel);
             return RedirectToAction(nameof(Index));
         }
 
         // GET: Task/Edit/5
         public ActionResult Edit(int id)
         {
-            
-            return View(tasks.FirstOrDefault(x => x.TaskId == id));
+
+            return View(_taskRepository.Get(id));
         }
 
         // POST: Task/Edit/5
@@ -61,9 +57,7 @@ namespace nowa_aplikacja.Controllers
         public ActionResult Edit(int id, TaskModel taskModel)
         {
 
-            TaskModel task = tasks.FirstOrDefault(x => x.TaskId == id);
-            task.Name = taskModel.Name;
-            task.Description = taskModel.Description;
+            _taskRepository.Update(id, taskModel);
             return RedirectToAction(nameof(Index));
 
         }
@@ -71,7 +65,7 @@ namespace nowa_aplikacja.Controllers
         // GET: Task/Delete/5
         public ActionResult Delete(int id)
         {
-            return View(tasks.FirstOrDefault(x => x.TaskId == id));
+            return View(_taskRepository.Get(id));
         }
 
         // POST: Task/Delete/5
@@ -79,28 +73,28 @@ namespace nowa_aplikacja.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, TaskModel taskModel)
         {
-            TaskModel task = tasks.FirstOrDefault(x => x.TaskId == id);
-            tasks.Remove(task);
+            _taskRepository.Delete(id);
 
             return RedirectToAction(nameof(Index));
-            
-            
-                
 
-            }
-            public ActionResult Done (int id)
-            {
-                TaskModel task = tasks.FirstOrDefault(x => x.TaskId == id);
-                task.Done = true;
 
-                return RedirectToAction(nameof(Index));
-            }
+
+
         }
+        public ActionResult Done(int id)
+        {
+            TaskModel task = _taskRepository.Get(id);
 
+            task.Done = true;
+            _taskRepository.Update(id, task);
+            return RedirectToAction(nameof(Index));
+        }
     }
 
-            
-     
+}
 
-    
+
+
+
+
 
